@@ -18,10 +18,8 @@
         <header class="header">
             <div class="header_top">
                 <div class="header_top_content margin_auto">
-                    <span class="slogan">Everything about Lifestyle, Travel and Gadgets!</span>
-                    <a href="#">Link vari</a>
-                    <a href="#">Link vari</a>
-                    <a href="#">Link vari</a>
+                    <span class="slogan">{{accountBar.slogan}}</span>
+                    <a href="#" v-for="links in accountBar.functions"> {{links}} </a>
                 </div>
             </div>
             <div class="header_middle">
@@ -31,9 +29,7 @@
             </div>
             <div class="header_bottom margin_auto">
                 <ul>
-                    <li><a href="#">Link vari</a></li>
-                    <li><a href="#">Link vari</a></li>
-                    <li><a href="#">Link vari</a></li>
+                    <li v-for="menu in menuBar"><a href="#">{{menu}}</a></li>
                 </ul>
                 <i class="fas fa-search"></i>
             </div> 
@@ -46,55 +42,13 @@
             <!-- inizio top news -->
             <div class="top_news clearFix">
                 <div class="top_news_content">
-
-                    <div class="card">
-                        <img src="images/blog-46.jpg">
+                    <div class="card" v-for="card in news">
+                        <img :src=" 'images/' + card.url">
                         <div class="card_text">
-                            <h5 class="genre">PHOTOGRAPHY</h3>
-                            <h4>HOW TO TAKE BETTER CONCERT PICTURES IN 30 SECOND</h4>
+                            <h5 class="genre">{{card.category}}</h3>
+                            <h4 style="padding-top: 10px;">{{card.text}}</h4>
                         </div>
                     </div>
-    
-                    <div class="card">
-                        <img src="images/blog-46.jpg">
-                        <div class="card_text">
-                            <h5 class="genre">PHOTOGRAPHY</h3>
-                            <h4>HOW TO TAKE BETTER CONCERT PICTURES IN 30 SECOND</h4>
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <img src="images/blog-46.jpg">
-                        <div class="card_text">
-                            <h5 class="genre">PHOTOGRAPHY</h3>
-                            <h4>HOW TO TAKE BETTER CONCERT PICTURES IN 30 SECOND</h4>
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <img src="images/blog-46.jpg">
-                        <div class="card_text">
-                            <h5 class="genre">PHOTOGRAPHY</h3>
-                            <h4>HOW TO TAKE BETTER CONCERT PICTURES IN 30 SECOND</h4>
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <img src="images/blog-46.jpg">
-                        <div class="card_text">
-                            <h5 class="genre">PHOTOGRAPHY</h3>
-                            <h4>HOW TO TAKE BETTER CONCERT PICTURES IN 30 SECOND</h4>
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <img src="images/blog-46.jpg">
-                        <div class="card_text">
-                            <h5 class="genre">PHOTOGRAPHY</h3>
-                            <h4>HOW TO TAKE BETTER CONCERT PICTURES IN 30 SECOND</h4>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             <!-- fine top news -->
@@ -104,33 +58,13 @@
                 <div class="popular_posts">
                     <h3>POPULAR POSTS</h3>
                     <ul>
-                        <li>
+                        <li v-for="popularPost in popularPosts">
                             <div class="posts_img">
-                                <img src="images/blog-55.jpg">
+                                <img :src=" 'images/' + popularPost.url">
                             </div> 
                             <div class="posts_text">
-                                <div>Simple prova prova prova prova</div>
-                                <div class="text_grey">Data del post</div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="posts_img">
-                                <img src="images/blog-55.jpg">
-                            </div> 
-                            <div class="posts_text">
-                                <div>Simple prova prova prova prova</div>
-                                <div class="text_grey">Data del post</div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="posts_img">
-                                <img src="images/blog-55.jpg">
-                            </div> 
-                            <div class="posts_text">
-                                <div>Simple prova prova prova prova</div>
-                                <div class="text_grey">Data del post</div>
+                                <div>{{popularPost.title}}</div>
+                                <div class="text_grey">{{popularPost.date}}</div>
                             </div>
                         </li>
                     </ul>
@@ -138,33 +72,13 @@
                 <div class="recent_posts">
                     <h3>RECENT POSTS</h3>
                     <ul>
-                        <li>
+                        <li v-for="recentPost in recentPosts">
                             <div class="posts_img">
-                                <img src="images/blog-55.jpg" alt="">
+                                <img :src=" 'images/' + recentPost.url" alt="">
                             </div> 
                             <div class="posts_text">
-                                <div>Simple prova prova prova prova</div>
-                                <div class="text_grey">Data del post</div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="posts_img">
-                                <img src="images/blog-55.jpg">
-                            </div> 
-                            <div class="posts_text">
-                                <div>Simple prova prova prova prova</div>
-                                <div class="text_grey">Data del post</div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="posts_img">
-                                <img src="images/blog-55.jpg">
-                            </div> 
-                            <div class="posts_text">
-                                <div>Simple prova prova prova prova</div>
-                                <div class="text_grey">Data del post</div>
+                                <div>{{recentPost.title}}</div>
+                                <div class="text_grey">{{recentPost.date}}</div>
                             </div>
                         </li>
                     </ul>

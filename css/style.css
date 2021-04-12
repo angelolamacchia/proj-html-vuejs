@@ -43,6 +43,7 @@ ul li {
 .header_top a {
     color: white;
     padding-left: 20px;
+    text-transform: uppercase;
 }
 
 .header_middle {
@@ -75,7 +76,7 @@ ul li {
     color: black;
     padding-right: 20px;
 }
-.header_bottom ul li:first-child a {
+.header_bottom ul li:first-child a{
     color: #0088cc;
 }
 
@@ -118,6 +119,8 @@ main {
 .card .genre {
     display: inline-block;
     background-color: #0088cc;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 /* impostazioni posts */
@@ -150,6 +153,10 @@ main {
 .posts .posts_img img {
     width: 50px;
     height: 50px;
+}
+
+.posts .posts_text {
+    padding-left: 5px;
 }
 
 .featured_posts .card {
