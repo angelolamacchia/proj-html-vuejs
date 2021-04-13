@@ -217,3 +217,91 @@ main {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+/* impostazioni latest posts */
+.latest_posts_content {
+    width: 80%;
+    padding: 40px 30px 40px 0;
+    float: left;
+}
+
+.latest_posts_content img {
+    width: 100%;
+}
+
+.big_card {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.big_card_text {
+    position: relative;
+    padding-top: 20px;
+}
+
+.big_card_text .text {
+    width: calc(100% - 60px);
+    float: right;
+}
+
+.big_card_text .date {
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-align: center;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.big_card_text .date .day {
+    background-color: #f7f7f7;
+    height: 40px;
+    padding-top: 10px;
+}
+.big_card_text .date .month {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.big_card_comments {
+    width: calc(100% - 60px);
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.big_card_comments .comments {
+    display: flex;
+    justify-content: flex-start;
+}
+.big_card_comments .comments div {
+    padding-right: 20px;
+}
+.big_card_comments .comments a {
+    color: #0088cc;
+}
+.big_card_comments button {
+    background-color: #f7f7f7;
+    padding: 3px;
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.big_card .images img {
+    width: calc(100% / 3);
+    float: left;
+}
+
+.latest_posts_social {
+    height: 500px;
+    width: 20%;
+    background-color: indigo;
+    float: left;
+    padding-top: 40px;
+}

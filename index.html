@@ -122,6 +122,69 @@
                 </div>
             </div>
             <!-- fine slider -->
+
+            <!-- inizio latest posts -->
+            <div class="latest_posts margin_auto">
+                <div class="latest_posts_content">
+
+                    <div class="big_card clearFix" v-for="bigCard in latestPosts">
+                        <img :src=" 'images/' + bigCard.url">
+                        <div class="big_card_text">
+                            <div class="date">
+                                <div class="day">{{bigCard.date.day}}</div>
+                                <div class="month">{{bigCard.date.month}}</div>
+                            </div>
+                            <div class="text">
+                                <h2>{{bigCard.title}}</h2>
+                                <p>{{bigCard.text}}</p>    
+                            </div>
+                        </div>
+                        <div class="big_card_comments">
+                            <div class="comments text_grey">
+                                <div><i class="far fa-user"></i> By<a href="#"> {{bigCard.author}}</a></div>
+                                <div><i class="far fa-folder"></i><a href="#" v-for="categ in bigCard.category"> {{categ}},</a></div>
+                                <div><i class="far fa-comments"></i><a href="#"> 12 Comments</a></div>
+                            </div>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+
+                    <!-- ho una card anomala, quindi la gestisco in html -->
+                    <div class="big_card clearFix">
+                        <div class="images clearFix">
+                            <img src="images/blog-13.jpg">
+                            <img src="images/blog-16.jpg">
+                            <img src="images/blog-20.jpg">
+                            <img src="images/blog-23.jpg">
+                            <img src="images/blog-29.jpg">
+                            <img src="images/blog-40.jpg">
+                        </div>
+                        <div class="big_card_text">
+                            <div class="date">
+                                <div class="day">8</div>
+                                <div class="month">JAN</div>
+                            </div>
+                            <div class="text">
+                                <h2>10 best travel tips after 5 years traveling the world</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum esse aspernatur dignissimos pariatur nesciunt porro nostrum asperiores similique dolor maiores sapiente, perferendis molestias, quidem aliquam explicabo quam voluptas obcaecati [...]</p>    
+                            </div>
+                        </div>
+                        <div class="big_card_comments">
+                            <div class="comments text_grey">
+                                <div><i class="far fa-user"></i> By<a href="#"> John Doe</a></div>
+                                <div><i class="far fa-folder"></i><a href="#"> "Travel", "Lifestyle"</a></div>
+                                <div><i class="far fa-comments"></i><a href="#"> 12 Comments</a></div>
+                            </div>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="latest_posts_social">
+
+                </div>
+            </div>
+            <!-- fine latest posts -->
         </main>
 
         <footer></footer>
