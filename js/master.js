@@ -136,5 +136,46 @@ var root = new Vue ({
             },
         ],
         instagramPhotos: ["insta1.jpg","insta2.jpg","insta3.jpg","insta4.jpg","insta5.jpg","insta6.jpg",],
+        footerRecentPosts: [
+            {
+                title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                date: {
+                    hour: "12:53",
+                    month: "Dec",
+                    day: "19th",
+                },
+                url: "our-office-4-square.jpg",
+            },
+            {
+                title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                date: {
+                    hour: "12:54",
+                    month: "Dec",
+                    day: "20th",
+                },
+                url: "our-office-5-square.jpg",
+            },
+        ],
+        footerComments: [
+            {
+                author: "John Doe",
+                link: "lorem impsum dolo sit amet.",
+                date: {
+                    hour: "12:55 AM",
+                    month: "Dec",
+                    day: "19th",
+                },
+            },
+            {
+                author: "Maria Carl",
+                link: "lorem impsum porget sue amet.",
+                date: {
+                    hour: "12:57 AM",
+                    month: "Dec",
+                    day: "21th",
+                },
+            },
+        ],
+        footerCategories: ["gadgets", "photography", "lifestyle", "fashion", "recipes", "travel", "business", "architecture", "reviews", "sports", "videos", "technology", "design"],
     },
 })

@@ -161,6 +161,7 @@
                     </div>
 
                 </div>
+                <!-- barra destra con post social -->
                 <div class="latest_posts_social">
                     <div class="twitter">
                         <h4>LATEST FROM TWITTER</h4>
@@ -203,14 +204,60 @@
                         <h4>Find us on Facebook</h4>
                         <div><a href="#">Okler Themes</a></div>
                     </div>
-                    
-
                 </div>
             </div>
             <!-- fine latest posts -->
         </main>
+        <!-- fine main -->
 
-        <footer></footer>
+        <!-- inizio footer -->
+        <footer>
+            <div class="footer_content margin_auto">
+                <div class="post_it">Get in touch</div>
+
+                <div class="footer_blog">
+                    <h4>About the blog</h4>
+                    <p class="text_grey">Lorem ipsum dolor praesentium tempore magnam veritatis ipsum nihil.</p>
+                    <p class="text_grey">Lorem ipsum dolor sit amequam repudiandae tenetur rem enim?</p>
+                    <a href="#">View more ></a>
+                </div>
+
+                <div class="footer_recent_posts">
+                    <h4>Recent posts</h4>
+                    <div class="little_card" v-for="littleCard in footerRecentPosts">
+                        <img :src=" 'images/' + littleCard.url">
+                        <div class="little_card_text">
+                            <h5>{{littleCard.title}}</h5>
+                            <div class="date text_grey">
+                                <div class="hour">{{littleCard.date.hour}}</div>
+                                <div class="month">{{littleCard.date.month}}</div>
+                                <div class="day">{{littleCard.date.day}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_recent_comments">
+                    <h4>Recent comments</h4>
+                    <div class="comment" v-for="comment in footerComments">
+                        <div><i class="fas fa-chevron-right"></i> {{comment.author}} commented on <a href="#">{{comment.link}}</a></div>
+                        <div class="date text_grey">
+                            <div class="hour">{{comment.date.hour}}</div>
+                            <div class="month">{{comment.date.month}}</div>
+                            <div class="day">{{comment.date.day}}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_categories">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li v-for="category in footerCategories">{{category}}</li>
+                    </ul>
+                </div>
+            </div> 
+        </footer>
+        <!-- fine footer -->
 
     </div> <!--fine container-->
     
