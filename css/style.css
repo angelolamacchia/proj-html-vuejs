@@ -220,7 +220,7 @@ main {
 
 /* impostazioni latest posts */
 .latest_posts_content {
-    width: 80%;
+    width: 75%;
     padding: 40px 30px 40px 0;
     float: left;
 }
@@ -293,15 +293,91 @@ main {
     border-bottom: 2px solid grey;
 }
 
-.big_card .images img {
+.big_card .images .multiple {
     width: calc(100% / 3);
     float: left;
 }
 
+.latest_posts .pages {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pages div {
+    width: 25px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0088cc;
+    font-weight: bold;
+}
+.pages .active {
+    background-color: #0088cc;
+    color: white;
+}
+.pages :hover {
+    background-color: #0088cc;
+    color: white;
+}
+
+/* impostazioni latest posts */
 .latest_posts_social {
-    height: 500px;
-    width: 20%;
-    background-color: indigo;
+    width: 25%;
     float: left;
     padding-top: 40px;
+}
+.latest_posts_social h4 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.twitter_post {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+.latest_posts_social .twitter_post:last-child  {
+    padding-bottom: 40px;
+}
+.twitter_post i {
+    padding: 0 10px 0 0;
+    font-size: 20px;
+}
+.twitter_text .date {
+    color: #0088cc;
+    padding: 10px 0;
+}
+
+.instagram_images img {
+    width: calc(100% / 3);
+    float: left;
+}
+.instagram_images {
+    padding-bottom: 30px;
+}
+
+.tags {
+    padding-bottom: 70px;
+}
+.tags ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.tags ul li {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.facebook a {
+    color: #0088cc;
+    border-left: 3px solid lightgray;
+    padding: 10px;
 }

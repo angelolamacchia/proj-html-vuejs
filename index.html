@@ -112,11 +112,11 @@
                     <i class="fas fa-chevron-left"></i>
                     <ul class="categories">
                         <li><span>Gadgets</span></li>
-                        <li><span>Gadgets</span></li>
-                        <li><span>Gadgets</span></li>
-                        <li><span>Gadgets</span></li>
-                        <li><span>Gadgets</span></li>
-                        <li><span>Gadgets</span></li>
+                        <li><span>Photography</span></li>
+                        <li><span>Lifestyle</span></li>
+                        <li><span>Fashion</span></li>
+                        <li><span>Recipes</span></li>
+                        <li><span>Travel</span></li>
                     </ul>
                     <i class="fas fa-chevron-right"></i>
                 </div>
@@ -127,8 +127,11 @@
             <div class="latest_posts margin_auto">
                 <div class="latest_posts_content">
 
-                    <div class="big_card clearFix" v-for="bigCard in latestPosts">
-                        <img :src=" 'images/' + bigCard.url">
+                    <div class="big_card clearFix" v-for="bigCard in latestPosts" >
+                        <div class="images clearFix">
+                            <img v-for="(image, index) in bigCard.url" :src=" 'images/' + image" 
+                            :class="bigCard.url.length > 1 ? 'multiple' : null">
+                        </div>
                         <div class="big_card_text">
                             <div class="date">
                                 <div class="day">{{bigCard.date.day}}</div>
@@ -149,38 +152,58 @@
                         </div>
                     </div>
 
-                    <!-- ho una card anomala, quindi la gestisco in html -->
-                    <div class="big_card clearFix">
-                        <div class="images clearFix">
-                            <img src="images/blog-13.jpg">
-                            <img src="images/blog-16.jpg">
-                            <img src="images/blog-20.jpg">
-                            <img src="images/blog-23.jpg">
-                            <img src="images/blog-29.jpg">
-                            <img src="images/blog-40.jpg">
-                        </div>
-                        <div class="big_card_text">
-                            <div class="date">
-                                <div class="day">8</div>
-                                <div class="month">JAN</div>
-                            </div>
-                            <div class="text">
-                                <h2>10 best travel tips after 5 years traveling the world</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum esse aspernatur dignissimos pariatur nesciunt porro nostrum asperiores similique dolor maiores sapiente, perferendis molestias, quidem aliquam explicabo quam voluptas obcaecati [...]</p>    
-                            </div>
-                        </div>
-                        <div class="big_card_comments">
-                            <div class="comments text_grey">
-                                <div><i class="far fa-user"></i> By<a href="#"> John Doe</a></div>
-                                <div><i class="far fa-folder"></i><a href="#"> "Travel", "Lifestyle"</a></div>
-                                <div><i class="far fa-comments"></i><a href="#"> 12 Comments</a></div>
-                            </div>
-                            <button>READ MORE</button>
-                        </div>
+                    <div class="pages">
+                        <div><i class="fas fa-chevron-left"></div></i>
+                        <div class="active">1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div><i class="fas fa-chevron-right"></i></div>
                     </div>
 
                 </div>
                 <div class="latest_posts_social">
+                    <div class="twitter">
+                        <h4>LATEST FROM TWITTER</h4>
+                        <div class="twitter_post">
+                            <i class="fab fa-twitter"></i>
+                            <div class="twitter_text">
+                                <p class="text_grey">If you have any suggestions for the next updates, let us know.</p>
+                                <div class="date">01:05 PM Sep 18th</div>
+                            </div>
+                        </div>
+
+                        <div class="twitter_post">
+                            <i class="fab fa-twitter"></i>
+                            <div class="twitter_text">
+                                <p class="text_grey">We have just updated Porto Admin. Check the changelog for more information.</p>
+                                <div class="date">01:04 PM Sep 18th</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instagram">
+                        <h4>PHOTOS FROM INSTAGRAM</h4>
+                        <div class="instagram_images clearFix">
+                            <img v-for="instaImg in instagramPhotos" :src=" 'images/' + instaImg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <h4>Tags</h4>
+                        <ul>
+                            <li>Design</li>
+                            <li>Brands</li>
+                            <li>Video</li>
+                            <li>Business</li>
+                            <li>Travel</li>
+                        </ul>
+                    </div>
+
+                    <div class="facebook">
+                        <h4>Find us on Facebook</h4>
+                        <div><a href="#">Okler Themes</a></div>
+                    </div>
+                    
 
                 </div>
             </div>

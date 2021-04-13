@@ -96,7 +96,7 @@ var root = new Vue ({
         latestPosts: [
             {
                 title: "How to make friends as a grown-up",
-                url: "blog-54.jpg",
+                url: ["blog-54.jpg",],
                 text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum esse aspernatur dignissimos pariatur nesciunt porro nostrum asperiores similique dolor maiores sapiente, perferendis molestias, quidem aliquam explicabo quam voluptas obcaecati [...]",
                 author: "John Doe",
                 date: {day: 12, month: "JAN"},
@@ -104,7 +104,7 @@ var root = new Vue ({
             },
             {
                 title: "Simple ways to have a pretty face",
-                url: "blog-55 (1).jpg",
+                url: ["blog-55 (1).jpg",],
                 text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum esse aspernatur dignissimos pariatur nesciunt porro nostrum asperiores similique dolor maiores sapiente, perferendis molestias, quidem aliquam explicabo quam voluptas obcaecati [...]",
                 author: "John Doe",
                 date: {day: 12, month: "JAN"},
@@ -112,7 +112,7 @@ var root = new Vue ({
             },
             {
                 title: "Ranking the greatest players in basketball",
-                url: "blog-56 (1).jpg",
+                url: ["blog-56 (1).jpg",],
                 text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum esse aspernatur dignissimos pariatur nesciunt porro nostrum asperiores similique dolor maiores sapiente, perferendis molestias, quidem aliquam explicabo quam voluptas obcaecati [...]",
                 author: "John Doe",
                 date: {day: 12, month: "JAN"},
@@ -120,20 +120,21 @@ var root = new Vue ({
             },
             {
                 title: "Top camper trailer towing tips",
-                url: "blog-58 (1).jpg",
+                url: ["blog-58 (1).jpg",],
                 text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum esse aspernatur dignissimos pariatur nesciunt porro nostrum asperiores similique dolor maiores sapiente, perferendis molestias, quidem aliquam explicabo quam voluptas obcaecati [...]",
                 author: "John Doe",
                 date: {day: 12, month: "JAN"},
                 category: ["Travel", "Lifestyle"],
             },
-            // {
-            //     title: "10 best travel tips after 5 years traveling the world",
-            //     url: ["blog-13.jpg", "blog-16.jpg", "blog-20.jpg", "blog-23.jpg", "blog-29.jpg", "blog-40.jpg"],
-            //     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum esse aspernatur dignissimos pariatur nesciunt porro nostrum asperiores similique dolor maiores sapiente, perferendis molestias, quidem aliquam explicabo quam voluptas obcaecati [...]",
-            //     author: "John Doe",
-            //     date: {day: 8, month: "JAN"},
-            //     category: ["Travel", "Lifestyle"],
-            // },
+            {
+                title: "10 best travel tips after 5 years traveling the world",
+                url: ["blog-13.jpg", "blog-16.jpg", "blog-20.jpg", "blog-23.jpg", "blog-29.jpg", "blog-40.jpg"],
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum esse aspernatur dignissimos pariatur nesciunt porro nostrum asperiores similique dolor maiores sapiente, perferendis molestias, quidem aliquam explicabo quam voluptas obcaecati [...]",
+                author: "John Doe",
+                date: {day: 8, month: "JAN"},
+                category: ["Travel", "Lifestyle"],
+            },
         ],
+        instagramPhotos: ["insta1.jpg","insta2.jpg","insta3.jpg","insta4.jpg","insta5.jpg","insta6.jpg",],
     },
 })
