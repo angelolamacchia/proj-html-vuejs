@@ -48,7 +48,8 @@
                         <img :src=" 'images/' + card.url">
                         <div class="card_text">
                             <h5 class="genre">{{card.category}}</h3>
-                            <h4 style="padding-top: 10px;">{{card.text}}</h4>
+                            <h4 style="padding-top: 10px;">{{card.title}}</h4>
+                            <p>{{card.text}}</p>
                         </div>
                     </div>
                 </div>
@@ -90,8 +91,8 @@
                     <div class="card">
                         <img src="images/blog-66.jpg">
                         <div class="card_text">
-                            <h5 class="genre">PHOTOGRAPHY</h3>
-                            <h4>HOW TO TAKE BETTER CONCERT PICTURES IN 30 SECOND</h4>
+                            <h5 class="genre">RECIPES</h3>
+                            <h4>Tips to help you quickly prepare your lunch</h4>
                         </div>
                     </div>
                     <div class="featured_author">
@@ -268,7 +269,7 @@
                     </div>
                     <div class="faq_right">
                         <ul>
-                            <li v-for="link in footerFaq.links"><a href="#"><i class="fas fa-chevron-right"></i> </a> {{link}}</li>
+                            <li v-for="link in footerFaq.links"><a href="#"><i class="fas fa-chevron-right"></i> {{link}}</a></li>
                         </ul>
                     </div>
                 </div>

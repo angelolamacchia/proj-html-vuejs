@@ -104,6 +104,7 @@ ul li {
     padding: 20px;
     position: relative;
     float: left;
+    font-size: 18px;
 }
 
 .card img {
@@ -116,8 +117,7 @@ ul li {
     left: 20px;
     bottom: 20px;
     color: white;
-    padding: 20px;
-    padding-right: 40px;
+    padding: 20px 40px 30px 20px;
 }
 
 .card .genre {
@@ -128,6 +128,15 @@ ul li {
 }
 .card .genre:hover {
     border: 3px solid #005580;
+}
+
+.card p {
+    display: none;
+    color: lightgray;
+    font-size: 0.8em;
+}
+.card:hover p {
+    display: block;
 }
 
 /* impostazioni posts */
@@ -530,7 +539,7 @@ footer .date div {
 .faq_right li {
     padding-left: 20px;
 }
-.faq_right li i {
+.faq_right li a {
     color: grey;
 }
 
