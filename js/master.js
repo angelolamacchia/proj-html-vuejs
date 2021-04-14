@@ -177,5 +177,10 @@ var root = new Vue ({
             },
         ],
         footerCategories: ["gadgets", "photography", "lifestyle", "fashion", "recipes", "travel", "business", "architecture", "reviews", "sports", "videos", "technology", "design"],
+        footerFaq: {
+            image: "logo-footer.png",
+            copiright: "© Copyright 2020. All rights reserved.",
+            links: ["FAQ's", "Sitemap", "Contact us"],
+        },
     },
 })

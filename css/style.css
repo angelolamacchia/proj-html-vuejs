@@ -384,13 +384,13 @@ main {
 
 /* impostazioni footer */
 footer {
-    height: 300px;
     background-color: #212529;
     font-size: 15px;
 }
 .footer_content {
     position: relative;
     padding-top: 60px;
+    padding-bottom: 50px;
 }
 .footer_content h4 {
     text-transform: uppercase;
@@ -399,6 +399,7 @@ footer {
 }
 
 footer .post_it {
+    font-family: 'Dancing Script', cursive;
     position: absolute;
     top: -20px;
     left: 0;
@@ -407,6 +408,15 @@ footer .post_it {
     padding: 10px 20px;
     font-size: 20px;
 }
+footer .triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #38516d;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+  }
 
 .footer_blog {
     width: 30%;
@@ -459,7 +469,6 @@ footer .date div {
     color: #0088cc;
 }
 
-
 .footer_categories {
     width: 20%;
     float: left;
@@ -476,4 +485,39 @@ footer .date div {
     margin: 5px;
     border-radius: 5px;
     text-transform: uppercase;
+}
+
+/* impostazioni faq */
+.faq {
+    height: 80px;
+    background-color: #1c2023;
+    color: grey;
+    font-size: 00.8em;
+}
+.faq_content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_left,
+.faq_right ul {
+    display: flex;
+    align-items: center;
+}
+
+.faq_left .copiright {
+    padding-left: 20px;
+}
+
+.faq_right li {
+    padding-left: 20px;
+}
+.faq_right li i {
+    color: grey;
+}
+
+.faq #logo_footer {
+    width: 80px;
 }
