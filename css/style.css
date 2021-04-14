@@ -81,15 +81,14 @@ ul li {
     color: black;
     padding-right: 20px;
 }
+.header_bottom ul li a:hover {
+    color: #0088cc;
+}
 .header_bottom ul li:first-child a{
     color: #0088cc;
 }
 
 /* impostazioni main */
-main {
-    
-}
-
 /* impostazioni top news */
 .top_news {   
     background-color: #f7f7f7;
@@ -127,12 +126,15 @@ main {
     padding: 5px;
     text-transform: uppercase;
 }
+.card .genre:hover {
+    border: 3px solid #005580;
+}
 
 /* impostazioni posts */
 .posts>div {
     width: calc(100% / 3);
     float: left;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 .posts>div:last-child {
     padding-right: 0;
@@ -214,13 +216,16 @@ main {
     color: #1c3441;
 }
 
-.categories li span {
+.categories li {
     padding: 15px 40px;
-    width: calc(100% / 6);
+    text-align: center;
     background-color: #212529;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+}
+.slider_content .categories li:hover {
+    border: 5px solid #005580;
 }
 
 /* impostazioni latest posts */
@@ -327,7 +332,7 @@ main {
     color: white;
 }
 
-/* impostazioni latest posts */
+/* impostazioni latest posts social*/
 .latest_posts_social {
     width: 25%;
     float: left;
@@ -349,6 +354,12 @@ main {
 .twitter_post i {
     padding: 0 10px 0 0;
     font-size: 20px;
+}
+.twitter_post:hover {
+    cursor: pointer;
+}
+.twitter_post:hover i {
+    color: #0088cc;
 }
 .twitter_text .date {
     color: #0088cc;
