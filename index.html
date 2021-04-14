@@ -18,7 +18,7 @@
     <div class="container" id="root">
         <!-- inizio header -->
         <header class="header">
-            <div class="header_top">
+            <div class="header_top" id="top_page">
                 <div class="header_top_content margin_auto">
                     <span class="slogan">{{accountBar.slogan}}</span>
                     <a href="#" v-for="links in accountBar.functions"> {{links}} </a>
@@ -275,8 +275,7 @@
             </div>
         </footer>
         <!-- fine footer -->
-        
-
+        <div class="button_scroll_up"><a href="#top_page"><i class="fas fa-chevron-up"></i></a></div>
     </div> <!--fine container-->
     
     <script src="js/master.js"></script>

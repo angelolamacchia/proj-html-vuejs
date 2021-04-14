@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 .margin_auto {
@@ -48,7 +53,7 @@ ul li {
 
 .header_middle {
     height: 90px;
-    border: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 .header_middle_content {
     height: 100%;
@@ -468,7 +473,7 @@ footer .date div {
 .footer_recent_comments a {
     color: #0088cc;
 }
-
+ 
 .footer_categories {
     width: 20%;
     float: left;
@@ -492,7 +497,7 @@ footer .date div {
     height: 80px;
     background-color: #1c2023;
     color: grey;
-    font-size: 00.8em;
+    font-size: 0.8em;
 }
 .faq_content {
     height: 100%;
@@ -520,4 +525,18 @@ footer .date div {
 
 .faq #logo_footer {
     width: 80px;
+}
+
+/* impostazioni button scroll up */
+.button_scroll_up {
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    background-color: #373839;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 5px 5px 0 0;
+}
+.button_scroll_up a {
+    color: lightgray;
 }
